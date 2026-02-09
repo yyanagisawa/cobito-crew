@@ -15,12 +15,12 @@ AGENTS.md 自体は説明を行わない。
 ### 概念と不変核（憲法）
 - **CONCEPTS.md**  
   Cobito Crew が何であり、何でないか。  
-  Mission / Advance / Workspace を中核とする不変の原則を定義する。
+  Mission / Advance / Workspace の存在理由と不変核を定義する。
 
 ### 用語の定義（語義の凍結）
 - **GLOSSARY.md**  
   Cobito Crew における主要な用語の定義集。  
-  本ドキュメントに定義された語義が唯一の正である。
+  用語の正は本ドキュメントのみである。
 
 ---
 
@@ -40,16 +40,26 @@ AGENTS.md 自体は説明を行わない。
   - 判断 / 前進 / 介入
   - Approve / Reject / Workspace Lock
 
+### Mission の設計と扱いを理解したい場合
+- **MISSION.md**
+  - Mission の設計指針（どう書き、どう進化させるか）
+  - Mission Rework / Mission Constraint の扱い
+
 ---
 
 ## 運用や振る舞いを理解したい場合
 
 ### Mission と Advance の運用モデル
-- **OPERATIONS.md**（作成予定）
-  - Mission → Advance のライフサイクル
-  - 人間の操作（Inbox / Pick / Approve / Reject）
-  - 1 Mission : 1 Advance 原則と例外
-  - Workspace ロックの扱い
+- **OPERATIONS.md**
+  - Mission → Advance のライフサイクルと手順
+  - 1 Mission : 1 Advance 原則と例外運用
+  - Workspace ロックと人間介入の最小指針
+
+### 判断の構造と学習
+- **DECISIONS.md**
+  - 判断の構造（Advance のみを対象とする評価軸）
+  - Mission Rework / Mission Constraint の位置づけ
+  - 判断履歴の継承と学習
 
 ### Advance の粒度と判断基準
 - **docs/advances/**（作成予定）
@@ -62,9 +72,9 @@ AGENTS.md 自体は説明を行わない。
 ## 技術構成を理解したい場合
 
 ### 高レベルアーキテクチャ
-- **ARCHITECTURE.md**（作成予定）
-  - Cobito Crew の全体構成
-  - GCP 上での責務分離
+- **ARCHITECTURE.md**
+  - Cobito Crew の全体構成と責務分離
+  - 外部入力（Issue / PR）の正規化
   - 永続データと一時環境の扱い
 
 ### セキュリティとガバナンス
@@ -113,3 +123,29 @@ AGENTS.md は、Cobito Crew における **唯一の索引**である。
 
 索引が肥大化した場合は、  
 リンク先のドキュメントを整理し、AGENTS.md は常に薄く保つ。
+
+---
+
+## ドキュメント編集・削除の判断基準（索引の保守ルール）
+
+Cobito Crew のドキュメントを編集・簡潔化する際は、
+内容の正しさや重要性ではなく、
+**その文章が属する責務**を基準に判断する。
+
+以下の問いに YES と答えられない文章は、
+原則として削除または別文書へ移動する。
+
+- この文章は、このドキュメントの「唯一の責務」に属しているか？
+- 同じ内容が、他のドキュメントの責務としてより適切に置けないか？
+- 概念の定義、運用手順、判断ロジックが混在していないか？
+
+判断に迷った場合は、
+文章を削るか、参照に置き換えることを優先する。
+
+思想や背景説明は CONCEPTS.md に集約し、
+定義は GLOSSARY.md、
+判断構造は DECISIONS.md、
+運用手順は OPERATIONS.md に寄せる。
+
+AGENTS.md は、
+これらの責務を横断する説明を持たない。

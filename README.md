@@ -8,3 +8,5 @@ Cobito Crew は、人間の判断を中心に据え、
 - CONCEPTS.md
 - GLOSSARY.md
 - AGENTS.md
+- MISSION.md
+- DECISIONS.md

@@ -10,6 +10,10 @@ Cobito Crew は、**人間の判断を中心に据えた「判断と責任のた
 本ドキュメントは、Cobito Crew が何であり、何でないか、  
 そして時間や技術が変わっても変えない不変の核を定義する。
 
+本ドキュメント内に登場する Mission / Advance / Workspace の定義は、  
+思想理解のための最小要約である。  
+厳密な語義および定義の正は GLOSSARY.md に従う。
+
 ---
 
 ## 1. Cobito Crew は何ではないか
@@ -48,6 +52,8 @@ Cobito Crew において、AIは主役ではない。
 Cobito Crew には、技術や実装が変わっても置き換えない概念が3つある。
 
 ### 3.1 Mission
+（定義の正は GLOSSARY.md を参照）
+
 Mission とは、**人間の意図**である。
 
 - 何を前進させたいのか
@@ -62,6 +68,7 @@ Mission は、ソフトウェア開発に限らない。
 ---
 
 ### Advanceの定義
+（定義の正は GLOSSARY.md を参照）
 
 Advanceとは、人間が判断できる状態差分である。
 
@@ -76,6 +83,8 @@ Cobito Crew は、原則として1つのMissionに対し、
 ---
 
 ### 3.3 Workspace
+（定義の正は GLOSSARY.md を参照）
+
 Workspace とは、**責任と影響範囲の境界**である。
 
 - プロジェクト
