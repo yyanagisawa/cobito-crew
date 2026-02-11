@@ -7,6 +7,8 @@ Cobito Crew は、AIを使って作業を自動化するためのツールでは
 
 Cobito Crew は、**人間の判断を中心に据えた「判断と責任のためのOS」**である。
 
+Advance your Mission.
+
 本ドキュメントは、Cobito Crew が何であり、何でないか、  
 そして時間や技術が変わっても変えない不変の核を定義する。
 
@@ -16,7 +18,7 @@ Cobito Crew は、**人間の判断を中心に据えた「判断と責任のた
 
 ---
 
-## 1. Cobito Crew は何ではないか
+## Cobito Crew は何ではないか
 
 Cobito Crew は、次のようなものではない。
 
@@ -31,7 +33,7 @@ Cobito Crew は「AIに任せる」ことを目的にしない。
 
 ---
 
-## 2. Cobito Crew は何か
+## Cobito Crew は何か
 
 Cobito Crew は、
 
@@ -47,11 +49,11 @@ Cobito Crew において、AIは主役ではない。
 
 ---
 
-## 3. 不変核（Core Primitives）
+## 不変核（Core Primitives）
 
 Cobito Crew には、技術や実装が変わっても置き換えない概念が3つある。
 
-### 3.1 Mission
+### Mission
 （定義の正は GLOSSARY.md を参照）
 
 Mission とは、**人間の意図**である。
@@ -67,7 +69,7 @@ Mission は、ソフトウェア開発に限らない。
 
 ---
 
-### Advanceの定義
+### Advance
 （定義の正は GLOSSARY.md を参照）
 
 Advanceとは、人間が判断できる状態差分である。
@@ -76,13 +78,12 @@ Advanceは、途中経過や作業の断片ではなく、
 人間が実際に触れる、または確認することで、
 良いか悪いかを判断できる形で提示されなければならない。
 
-Cobito Crew は、原則として1つのMissionに対し、
-1つのAdvanceを生成する。
-分割は例外であり、人間の判断を容易にする場合にのみ許容される。
+Cobito Crew は、Mission から Advance を生成し、
+人間が判断できる状態差分として提示する。
 
 ---
 
-### 3.3 Workspace
+### Workspace
 （定義の正は GLOSSARY.md を参照）
 
 Workspace とは、**責任と影響範囲の境界**である。
@@ -99,7 +100,7 @@ Workspace は、Advance の同時進行を制御するロック単位でもあ�
 
 ---
 
-## 4. 人間とAIの役割分担
+## 人間とAIの役割分担
 
 Cobito Crew における役割分担は明確である。
 
@@ -135,7 +136,7 @@ AIは、Missionに向けた前進に責務を持つ。
 
 ---
 
-## 5. なぜ Agent Teams では足りないのか
+## なぜ Agent Teams では足りないのか
 
 高度な Agent Teams は、タスクを高速に処理できる。  
 しかしそれは、
@@ -174,7 +175,7 @@ Cobito Crew は、判断を代替する仕組みではなく、
 
 ---
 
-## 7. 時間が経っても変えないこと
+## 時間が経っても変えないこと
 
 以下は、将来にわたって維持されるべき前提である。
 
@@ -188,7 +189,7 @@ Cobito Crew は別の何かになっている。
 
 ---
 
-## 8. 本ドキュメントの位置づけ
+## 本ドキュメントの位置づけ
 
 本ドキュメントは、Cobito Crew における「憲法」である。
 

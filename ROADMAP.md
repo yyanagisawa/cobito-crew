@@ -42,7 +42,7 @@ Cobito Crew 自身を、Cobito Crew の思想どおりに開発できる状態�
 
 ### やること
 - Cobito Crew 自身の開発を Mission / Advance で回す
-- Reject / Constraint / Rework の実運用検証
+- Reject / Mission Constraint / Rework の実運用検証
 - 人間判断の負荷と質の観測
 
 ### やらないこと
@@ -95,7 +95,7 @@ Cobito Crew が **賢く・自然に適応できる能力**を獲得する。
 
 ### 状態
 - Issue → Mission 変換精度が向上
-- Mission Rework / Constraint が自動提案される
+- Mission Rework / Mission Constraint が自動提案される
 - Issue 間の分割・統合が提案される
 - 判断履歴が Ingestion に反映される
 
@@ -129,7 +129,7 @@ Cobito Crew が **賢く・自然に適応できる能力**を獲得する。
 
 ### 状態
 - Workspace ごとの判断キューが安定
-- Reject / Constraint の学習が横断的に活きる
+- Reject / Mission Constraint の学習が横断的に活きる
 - 人間の判断負荷が線形に増えない
 
 ### やること
@@ -178,7 +178,7 @@ Cobito Crew を、
 
 ### やること
 - 判断パターンの分析
-- Constraint 進化の可視化
+- Mission Constraint 進化の可視化
 - 運用思想の再言語化
 
 ### やらないこと

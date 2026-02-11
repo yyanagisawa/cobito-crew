@@ -10,7 +10,7 @@
 
 ---
 
-## 1. 設計方針
+## 設計方針
 
 Cobito Crew のアーキテクチャは、次の原則に基づいて設計される。
 
@@ -25,11 +25,11 @@ Cobito Crew は、個々のAIやツールの集合ではなく、
 
 ---
 
-## 2. 全体構成（論理）
+## 全体構成（論理）
 
 Cobito Crew は、論理的に次の3層で構成される。
 
-### 2.1 Control Plane（統制層）
+### Control Plane（統制層）
 Mission と Advance を管理し、全体の進行を制御する層。
 
 - Mission の受付と状態管理
@@ -41,7 +41,7 @@ Cobito Crew の「司令塔」に相当する。
 
 ---
 
-### 2.2 Execution Plane（実行層）
+### Execution Plane（実行層）
 AI（Crew）が実際に前進を行う層。
 
 - Mission の理解と分解
@@ -53,7 +53,7 @@ Execution Plane は、複数の実行主体（AI、エージェント、ツー�
 
 ---
 
-### 2.3 Review Interface（判断接点）
+### Review Interface（判断接点）
 人間が Advance を受け取り、判断を行う接点。
 
 - Advance の一覧取得
@@ -64,7 +64,7 @@ Execution Plane は、複数の実行主体（AI、エージェント、ツー�
 
 ---
 
-## 3. データの正（Source of Truth）
+## データの正（Source of Truth）
 
 Cobito Crew におけるデータの正は明確に分離される。
 
@@ -79,7 +79,7 @@ Cobito Crew におけるデータの正は明確に分離される。
 
 これにより、外部プロジェクトや既存運用に依存しない統制が可能となる。
 
-### 3.1 外部入力の正規化（Issue / PR）
+### 外部入力の正規化（Issue / PR）
 Issue / PR などの外部入力は「正」ではない。  
 ただし **入力として統制**し、Mission / Advance に正規化して扱う。
 
@@ -89,7 +89,7 @@ Issue / PR などの外部入力は「正」ではない。
 
 ---
 
-## 4. Workspace 分離と安全性
+## Workspace 分離と安全性
 
 Workspace は、責任と影響範囲を分離するための最小単位である。
 
@@ -102,7 +102,7 @@ Workspace は、責任と影響範囲を分離するための最小単位であ�
 
 ---
 
-## 5. 前進と判断の分離
+## 前進と判断の分離
 
 Cobito Crew のアーキテクチャにおける最重要点は、
 **前進（Execution）と判断（Decision）を構造的に分離していること**である。
@@ -116,7 +116,7 @@ Control Plane は、判断可能な状態になった時点でのみ、人間に
 
 ---
 
-## 6. GCP 前提の考え方（高レベル）
+## GCP 前提の考え方（高レベル）
 
 Cobito Crew は、実行環境として GCP を前提に設計される。
 
@@ -132,7 +132,7 @@ Cobito Crew は、実行環境として GCP を前提に設計される。
 
 ---
 
-## 7. 外部エージェント・ツールとの関係
+## 外部エージェント・ツールとの関係
 
 高度な Agent Teams や外部ツールは、
 Execution Plane の一部として利用されうる。
@@ -146,7 +146,7 @@ Cobito Crew は、
 
 ---
 
-## 8. 拡張と進化
+## 拡張と進化
 
 Cobito Crew のアーキテクチャは、次の拡張を前提とする。
 
@@ -159,7 +159,7 @@ Cobito Crew のアーキテクチャは、次の拡張を前提とする。
 
 ---
 
-## 9. 本ドキュメントの位置づけ
+## 本ドキュメントの位置づけ
 
 ARCHITECTURE.md は、Cobito Crew の構造を理解するための地図である。
 

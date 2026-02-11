@@ -11,7 +11,7 @@ Mission は Cobito Crew の出発点であり、
 
 ---
 
-## 1. Mission 定義の扱い
+## Mission 定義の扱い
 
 Mission の定義（語義）は GLOSSARY.md を正とする。  
 本ドキュメントは、Mission を **どう設計し、どう進化させるか**にのみ焦点を当てる。  
@@ -19,7 +19,7 @@ Mission の定義（語義）は GLOSSARY.md を正とする。
 
 ---
 
-## 2. Mission の抽象度について
+## Mission の抽象度について
 
 Mission の抽象度に上限はない。
 
@@ -38,7 +38,7 @@ Mission をそのまま実行するのではなく、
 
 ---
 
-## 3. Mission が満たすべき最小条件
+## Mission が満たすべき最小条件
 
 Mission は、次の条件を満たしていればよい。
 
@@ -57,7 +57,7 @@ Mission は **不完全であってよい**。
 
 ---
 
-## 4. Mission が不適切な場合（Mission Rework）
+## Mission が不適切な場合（Mission Rework）
 
 次のような場合、Mission は判断可能な形になっていない。
 
@@ -74,7 +74,7 @@ Mission Rework は Reject ではなく、
 
 ---
 
-## 5. Mission と Advance の関係
+## Mission と Advance の関係
 
 Mission は固定される。  
 Advance は変化し続ける。
@@ -90,7 +90,7 @@ Mission は維持され、次の Advance が生成される。
 
 ---
 
-## 6. Mission Constraint（Mission の進化）
+## Mission Constraint（Mission の進化）
 
 Advance を確認する過程で、  
 Mission に書かれていなかった前提や制約が  
@@ -105,12 +105,12 @@ Mission Constraint は、
 - 次の Advance の前提条件となり
 - 判断の学習結果として蓄積される
 
-Mission は、Constraint の追加によって  
+Mission は、Mission Constraint の追加によって  
 **より人間の判断軸に適合した形へと進化する**。
 
 ---
 
-## 7. Mission の自動生成と外部入力
+## Mission の自動生成と外部入力
 
 Mission は、人間が直接提示するだけでなく、  
 外部システムを入力として生成されることがある。
@@ -126,7 +126,7 @@ Mission を正として扱い、
 
 ---
 
-## 8. Mission は評価されない
+## Mission は評価されない
 
 Cobito Crew において、評価の対象は Advance である。  
 Mission 自体は、Approve / Reject の対象ではない。
@@ -134,7 +134,7 @@ Mission 自体は、Approve / Reject の対象ではない。
 Mission は、
 
 - 修正される（Rework）
-- 制約が追加される（Constraint）
+- 制約が追加される（Mission Constraint）
 - 継続される
 
 が、  
@@ -142,7 +142,7 @@ Mission は、
 
 ---
 
-## 9. 本ドキュメントの位置づけ
+## 本ドキュメントの位置づけ
 
 MISSION.md は、  
 Cobito Crew における **「意図の設計書」**である。

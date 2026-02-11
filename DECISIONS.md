@@ -12,28 +12,27 @@ Cobito Crew は「正解を出す組織」ではない。
 
 ---
 
-## 0. 判断の前提
+## 判断の前提
 
 Cobito Crew における判断は、主観や雰囲気ではなく、  
 明確な構造に基づいて行われる。
 
-- 判断の対象は **Advance** である
+- 判断の対象は **Advance のみ**である
 - 判断の主体は **常に人間**である
-- 判断は **Advance のみ**に対して行われる
 - Mission は **Advance の整合性を測る参照軸**であり、評価対象ではない
 - 判断は **Mission / Advance / Workspace** の参照軸に照らして行われる
 - 判断の履歴は **次の前進を拘束する情報**として保存される
 
 ---
 
-## 1. 判断の三層モデル（Advance 評価軸）
+## 判断の三層モデル（Advance 評価軸）
 
 Cobito Crew における判断は、以下の三層で構造化される。  
 上位層の否定は、下位層を問わず Reject を導く。
 
 ---
 
-### 1.1 第1層：Mission Alignment による判断
+### 第1層：Mission Alignment による判断
 
 #### 判断の問い
 - この Advance は、Mission を前進させているか？
@@ -51,7 +50,7 @@ Mission Alignment Reject は、
 
 ---
 
-### 1.2 第2層：Advance 固有の判断
+### 第2層：Advance 固有の判断
 
 #### 判断の問い
 - この Advance は、何を判断させたいのかが明確か？
@@ -70,7 +69,7 @@ Advance Reject は、
 
 ---
 
-### 1.3 第3層：Workspace 文脈による判断
+### 第3層：Workspace 文脈による判断
 
 #### 判断の問い
 - この判断を、この Workspace の責任範囲で引き受けられるか？
@@ -89,7 +88,7 @@ Workspace Reject は、
 
 ---
 
-## 2. Mission Rework（判断以前の前提整理）
+## Mission Rework（判断以前の前提整理）
 
 Advance を評価できない場合がある。  
 それは Advance の問題ではなく、  
@@ -109,7 +108,7 @@ Mission Rework は、判断の失敗ではない。
 
 ---
 
-## 3. Mission Constraint（暗黙前提の明文化）
+## Mission Constraint（暗黙前提の明文化）
 
 Advance を確認する過程で、  
 Mission に明示されていなかった前提や制約が  
@@ -128,21 +127,21 @@ Mission Constraint は、
 
 ---
 
-## 4. 例外の2軸分類（判断容易性 / リスク制御）
+## 例外の2軸分類（判断容易性 / リスク制御）
 
-分割・Rework・Constraint は、**理由**で分類する。
+分割・Rework・Mission Constraint は、**理由**で分類する。
 
 - **タイプA：判断容易性**  
   判断可能性を高めるための分割・Rework
 - **タイプB：リスク制御**  
-  リスクや影響を制御するための分割・Constraint
+  リスクや影響を制御するための分割・Mission Constraint
 
 例外が発生した場合、A/B の種別を判断履歴に付与し、  
 次の Advance 生成に反映する。
 
 ---
 
-## 5. Mission Constraint の自動提案と確定の線引き
+## Mission Constraint の自動提案と確定の線引き
 
 Cobito Crew は、Mission Constraint を  
 **自動で抽出・提案してよい**。
@@ -151,7 +150,7 @@ Cobito Crew は、Mission Constraint を
 
 ---
 
-### 4.1 自動提案してよい（広く許容）
+### 自動提案してよい（広く許容）
 
 Advance や Reject 理由から、  
 以下のような暗黙前提を提案してよい。
@@ -166,7 +165,7 @@ Advance や Reject 理由から、
 
 ---
 
-### 4.2 条件付きで半自動確定してよい
+### 条件付きで半自動確定してよい
 
 以下の条件を満たす制約は、  
 人間の明示的な同意（Yes）をもって確定してよい。
@@ -181,7 +180,7 @@ Advance や Reject 理由から、
 
 ---
 
-### 4.3 自動確定してはならない（人間専用）
+### 自動確定してはならない（人間専用）
 
 以下は、提案は可能だが、  
 確定は必ず人間が行う。
@@ -193,7 +192,7 @@ Advance や Reject 理由から、
 
 ---
 
-## 6. Reject と Constraint は前進である
+## Reject と Mission Constraint は前進である
 
 Cobito Crew において、
 
@@ -213,12 +212,12 @@ Cobito Crew において、
 
 ---
 
-## 7. 判断履歴の継承と学習
+## 判断履歴の継承と学習
 
 各判断には、次の情報が紐づけられる。
 
 - 判断の種別  
-  （Mission Alignment Reject / Advance Reject / Workspace Reject / Mission Rework / Constraint）
+  （Mission Alignment Reject / Advance Reject / Workspace Reject / Mission Rework / Mission Constraint）
 - 判断理由
 - 次の Advance に引き継ぐ制約
 - 例外タイプ（A: 判断容易性 / B: リスク制御）
@@ -234,7 +233,7 @@ Cobito Crew が学習するのは、
 
 ---
 
-## 8. 本ドキュメントの位置づけ
+## 本ドキュメントの位置づけ
 
 本ドキュメントは、Cobito Crew における  
 **「判断と学習の憲章」**である。
