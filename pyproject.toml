@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobito-crew"
+version = "0.1.0"
+description = "Advance your Mission."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "UNLICENSED"}
+authors = [{name = "Cobito Crew"}]
+
+[project.scripts]
+cobito-crew = "cobito_crew.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
