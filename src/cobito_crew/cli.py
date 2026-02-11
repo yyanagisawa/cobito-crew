@@ -13,6 +13,7 @@ from cobito_crew.storage import (
     decide,
     default_db_path,
     get_advance,
+    get_latest_advance_for_mission,
     get_mission,
     init_db,
     list_advances,
@@ -100,6 +101,20 @@ def cmd_advance_show(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_advance_latest(args: argparse.Namespace) -> int:
+    with connect(_db_path(args)) as conn:
+        init_db(conn)
+        a = get_latest_advance_for_mission(conn, args.mission_id)
+    if a is None:
+        print(f"error: no advances for mission {args.mission_id}", file=sys.stderr)
+        return 2
+    if args.id_only:
+        print(a.id)
+    else:
+        print(f"{a.id}\t{a.status}\tmission={a.mission_id}\t{a.title}")
+    return 0
+
+
 def cmd_advance_set_status(args: argparse.Namespace) -> int:
     with connect(_db_path(args)) as conn:
         init_db(conn)
@@ -174,6 +189,11 @@ def build_parser() -> argparse.ArgumentParser:
     sp = sub.add_parser("advance-show", help="show advance")
     sp.add_argument("id", type=int)
     sp.set_defaults(func=cmd_advance_show)
+
+    sp = sub.add_parser("advance-latest", help="print latest advance for mission")
+    sp.add_argument("mission_id", type=int)
+    sp.add_argument("--id-only", action="store_true", help="print only advance id")
+    sp.set_defaults(func=cmd_advance_latest)
 
     sp = sub.add_parser("advance-set-status", help="set advance status")
     sp.add_argument("id", type=int)

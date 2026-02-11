@@ -39,6 +39,9 @@ cobito-crew mission-list --workspace crew
 cobito-crew advance-create --workspace crew --mission 1 --title "Draft advance" --body "$(cobito-crew advance-template)" --status ready
 cobito-crew advance-list --workspace crew
 
+# Missionに紐づく最新Advance IDを取る（例）
+cobito-crew advance-latest 1 --id-only
+
 # advance id を仮に 1 とする
 cobito-crew advance-review 1
 cobito-crew advance-approve 1 --reason "テンプレで判断できる"

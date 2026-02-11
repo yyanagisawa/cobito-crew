@@ -206,6 +206,14 @@ def list_advances(conn: sqlite3.Connection, workspace_name: str, mission_id: int
     return [Advance(**dict(r)) for r in rows]
 
 
+def get_latest_advance_for_mission(conn: sqlite3.Connection, mission_id: int) -> Advance | None:
+    row = conn.execute(
+        "SELECT * FROM advances WHERE mission_id = ? ORDER BY id DESC LIMIT 1",
+        (mission_id,),
+    ).fetchone()
+    return None if row is None else Advance(**dict(row))
+
+
 def set_advance_status(conn: sqlite3.Connection, advance_id: int, status: str) -> Advance:
     if status not in VALID_ADVANCE_STATUSES:
         raise ValueError(f"invalid advance status: {status}")
