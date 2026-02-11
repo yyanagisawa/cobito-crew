@@ -50,6 +50,38 @@ Cobito Crew 自身を、Cobito Crew の思想どおりに開発できる状態�
 - Issue Ingestion
 - 自動化の最適化
 
+### 到達条件（Definition of Done）
+Phase 0 は「機能が揃った」ではなく、**判断と運用が破綻なく回る**ことをもって完了とみなす。
+
+- `crew` Workspace で、最低1回以上のループが端から端まで成立している
+	- Mission 提示 → Advance 生成（ready）→ Approve / Reject → 次の前進
+- 判断の三層モデルが、Reject理由として実運用に耐える
+	- Mission Alignment Reject / Advance Reject / Workspace Reject が区別されて記録できる
+- Mission Rework / Mission Constraint が「例外」ではなく通常運用として扱える
+	- Rework：Advance を出さずに前提整理要求へ遷移できる
+	- Constraint：提案→人間確定→以降の前進に拘束として効く
+- Workspace Lock が有効に機能し、人間の判断が同一Workspaceで競合しない
+- 判断履歴が保存され、次のAdvance生成時の前提として参照できる
+- 人間判断の負荷（回数・所要時間・差し戻し理由）が観測できる
+
+### 最小成果物（Phase 0 で手に入れるもの）
+- Mission / Advance / Workspace の永続的な状態管理
+- Advance の状態遷移（draft / ready / in_review / approved / rejected / expired）
+- Review Interface の最小形（人間が「触って判断」できる入口）
+- 判断履歴（Reject理由 / Rework / Mission Constraint）の記録と参照
+
+### 最初のイテレーション案（MVP順）
+Phase 0 は「1 Mission : 1 Advance」を守り、まずは短い判断経路を積み重ねる。
+
+1. **Advance テンプレの確定（判断体験の標準化）**
+2. **Workspace Lock の仕様確定（競合と責任衝突の防止）**
+3. **判断履歴の最小スキーマ確定（次の前進を拘束できる状態）**
+4. **Rework / Mission Constraint の運用導線確定（例外を通常化）**
+
+派生ドキュメント：
+- docs/advances/templates/phase0.md
+- docs/governance/PHASE0.md
+
 ---
 
 ## Phase 1：Multi Workspace（Crew + Cobito）

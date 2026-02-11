@@ -62,10 +62,8 @@ AGENTS.md 自体は説明を行わない。
   - 判断履歴の継承と学習
 
 ### Advance の粒度と判断基準
-- **docs/advances/**（作成予定）
-  - 良い Advance / 悪い Advance の例
-  - 「人間が判断できる状態差分」とは何か
-  - 分割が許容されるケース
+- **docs/advances/**
+  - Phase 0（単独運用）のテンプレ：docs/advances/templates/phase0.md
 
 ---
 
@@ -78,10 +76,8 @@ AGENTS.md 自体は説明を行わない。
   - 永続データと一時環境の扱い
 
 ### セキュリティとガバナンス
-- **docs/governance/**（作成予定）
-  - Workspace 分離の原則
-  - 権限・責任の境界
-  - 失敗時・Reject 時の扱い
+- **docs/governance/**
+  - Phase 0（単独運用）の最小ガバナンス：docs/governance/PHASE0.md
 
 ---
 
